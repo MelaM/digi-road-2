@@ -89,7 +89,7 @@
 
       var wrongSideInfo = asset.id !== 0 && !_.isEmpty(oppositeSideSignProperty.propertyValue) ?
         '    <div id="wrongSideInfo" class="form-group read-only">' +
-        '        <label class="control-label">' + 'Liikenteenvastainen' + '</label>' +
+        '        <label class="control-label">Liikenteenvastainen</label>' +
         '        <p class="form-control-static">' + oppositeSideSignProperty.propertyDisplayValue + '</p>' +
         '    </div>' : '';
 
@@ -349,6 +349,7 @@
         sorted[key] = properties[key];
       });
       return sorted;
+
     };
 
     var renderAdditionalPanels = function (property, collection) {
